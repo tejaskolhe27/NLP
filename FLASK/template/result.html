@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title> Marks of The Student</title>
+    </head>
+    <body>
+        <Center><h3>Mark of Student</h3></Center>
+        <br>
+        <center>
+            <table border = 2>
+                {% for k,v in result.items() %}
+                <tr>
+                    <th style="width: 150px;">{{k}}</th>
+                    <td style="width: 50px;">{{v}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <title>Spam Message Detector</title>
+    <body>
+        <br>
+        <center><h2 style = "color: darkcyan;font-size: 50px;">Spam Detector</h2></center>
+        <center>
+            <p style = "font-size: 20px; font-family: 'Courier New';"><b>Your Message : </b>{{data["message"]}}</p>
+                <div style ="padding: 10px; border: 5px solid gray;margin: 0;width: 550px;">
+
+                    {% if data["result"]=="ham"%}
+                    <p style = "font-size: 25px; font-family: 'Courier New';color: green;">This is NOT SPAM message !!!</p>
+                    {% else%}
+                    <p style = "font-size: 35px; font-family: 'Courier New'; color: red;"><b>This is SPAM message !!!</b></p>
+                    {% endif%}
+                    
+                </div>     
+    </center>
+    </body>
+</html>            	
+
